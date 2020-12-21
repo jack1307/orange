@@ -6,6 +6,7 @@ import com.anonymous.orange.service.UserInfoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -26,4 +27,8 @@ public class UserInfoController {
         return JSON.toJSONString(userInfos);
     }
 
+    @PostMapping(value = "/orange/user/insert")
+    public String insert(UserInfoPO userInfo){
+        return null;
+    }
 }

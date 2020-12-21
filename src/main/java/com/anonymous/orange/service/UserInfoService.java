@@ -10,5 +10,10 @@ import java.util.List;
  */
 public interface UserInfoService {
 
+    /**
+     * 列表查询
+     * @return list
+     */
     List<UserInfoPO> selectList();
+
 }
